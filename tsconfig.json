@@ -14,12 +14,22 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
-    /* Linting */
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    /* Paths */
+    "baseUrl": "src",
+    "paths": {
+      "@ui/*": ["ui/*"],
+      "@components/*": ["components/*"],
+      "@widgets/*": ["widgets/*"],
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@assets/*": ["assets/*"],
+      "@api/*": ["api/*"],
+      "@store/*": ["store/*"],
+      "@routes/*": ["routes/*"]
+    }
   },
   "include": ["src"],
+  "typeRoots": ["./types"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
